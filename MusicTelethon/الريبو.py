@@ -30,7 +30,7 @@ async def restart(client, m: Message):
     await loli.edit("7")
     await loli.edit("8")
     await loli.edit("9")
-    await loli.edit("**✅ تم اعاده تشغيل موسيقى تليثون**")
+    await loli.edit("**✅ 𝑨𝒔𝒌𝒐 تم اعاده تشغيل موسيقى **")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 @Client.on_message(filters.command(["الاوامر"], prefixes=f"{HNDLR}"))
@@ -39,10 +39,10 @@ async def help(client, m: Message):
     HELP = f"""
 <b>👋 اهلا {m.from_user.mention}!
 
-𝘰𝘳𝘥𝘦𝘳𝘴 𝘮𝘶𝘴𝘪𝘤 𝘵𝘦𝘭𝘦𝘵𝘩𝘰𝘯
+𝘰𝘳𝘥𝘦𝘳𝘴 𝘮𝘶𝘴𝘪𝘤 𝘢𝘴𝘬𝘰
 ——————×—————
 
-⧉ | لتشغيل صوتية في المكالمة أرسل ⇦ [ `{HNDLR}تشغيل/شغل/ش  + اسم الاغنية` ]
+⧉ | لتشغيل صوتية في المكالمة أرسل ⇦ [ `{HNDLR}تشغيل  + اسم الاغنية` ]
 ⧉ | لتشغيل فيديو في المكالمة  ⇦ [ `{HNDLR}تشغيل_فيديو  + اسم الاغنية` ]
 ———————×———————
 
@@ -60,13 +60,13 @@ async def help(client, m: Message):
 🛠 | @D_o_m_A12
 ⭐ | @lMl4ll"""
     await m.reply(HELP)
-@Client.on_message(filters.command(["الريبو"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["المطور"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
     await m.delete()
     REPO = f"""
 <b>👋  اهلا {m.from_user.mention}!
 
-🎶 هذا ميوزك العرب | @D_o_m_A12
+🎶 هذا ميوزك 𝘢𝘴𝘬𝘰 | @D_o_m_A12
 ⭐ المطور | @lMl4ll
 """
     await m.reply(REPO, disable_web_page_preview=True)
